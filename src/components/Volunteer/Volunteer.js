@@ -1,15 +1,29 @@
-import { Card } from '@material-ui/core';
+
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button,Card, ListGroupItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Volunteer.css'
 const Volunteer = (props) => {
-    const data = props.data
-    console.log(data)
+    const data = props.data;
+    const {type,img} = data;
+console.log(type)
     return (
     
   <div className="col-md-3">
-      <h3>{data.name}</h3>
-    <p>{data.type}</p>
+
+   
+
+   <Card >
+  <Card.Img  src={img} />
+  <Card.Body>
+
+ <Link to={`/information/${type}`}><h5>{data.type}</h5></Link>
+      
+  
+  </Card.Body>
+</Card>
+
+
   </div>
        
     );

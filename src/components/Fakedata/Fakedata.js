@@ -1,220 +1,174 @@
 var fakeData = [
     { 
-      "type": "BreakFast",
+      "type": "Child Support",
       "id": 1,
 
-      "name": "Egg boiled",
-      "img" : "https://i.ibb.co/cXHjjLS/breakfast.jpg",
-      "sheaf": "Bret",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 15,
+   
+      "img" : "https://i.ibb.co/6B85B9B/child-Support.png",
+     
     
       
      
     },
     { 
-        "type": "BreakFast",
+        "type": "Refugee Shelter",
         "id": 2,
-      "name": "Fruits with toas",
-      "img" :"https://i.ibb.co/k4pM7fg/breakfast2.jpg",
-      "sheaf": "Antonette",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 20,
-     
+      
+      "img" :"https://i.ibb.co/BcYxnKp/refuse-Shelter.png",
+    
      
       
     },
     {
-        "type": "BreakFast",
+        "type": "Food Charity",
         "id": 3,
-      "name": "Varieties Fruits",
-      "img" :"https://i.ibb.co/Q8ZYNDB/breakfast3.jpg",
-      "sheaf": "Samantha",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 26,
+  
+      "img" :"https://i.ibb.co/6DxPqGK/food-Charity.png" ,
+     
       
     },
     {
-        "type": "BreakFast",
+        "type": "Hoisting and Clothing swap",
         "id": 4,
-      "name": "Meat Fried",
-      "img" : "https://i.ibb.co/Y2jcXjd/Photographer-Jennifer-Causey-Food-Stylist-Mary-Claire-Britton-Prop-Stylist-Audrey-Davis.jpg",
-      "sheaf": "Karianne",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 25,
+    
+      "img" :"https://i.ibb.co/dKGgLXh/drive-Safety.png",
+   
      
     },
     {
-        "type": "BreakFast",
+        "type": "Host a river clean-up",
         "id": 5,
-      "name": "Egg & Meat fried",
-      "img" : "https://i.ibb.co/mGqCt58/breakfast5.jpg",
-      "sheaf": "Kamren",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 25,
       
+      "img" :"https://i.ibb.co/Smk084c/river-Clean.png",
+    
      
     },
     {
-        "type": "BreakFast",
+        "type": "Clean water for children",
         "id": 6,
-      "name": "Omlet",
-      "img" :"https://i.ibb.co/VY6DRyn/breakfast6.jpg",
-      "sheaf": "Leopoldo_Corkery",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 15,
+     
+      "img" :"https://i.ibb.co/ng3rXJK/clean-Water.png" ,
+    
      
       
     },
     {
-        "type": 'Launch',
+        "type": 'Good Education',
         "id": 7,
-      "name": "Meats & chicken",
-      "img" :"https://i.ibb.co/V0yzRKv/launch.png",
-      "sheaf": "Elwyn.Skiles",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 66,
+     
+      "img" :"https://i.ibb.co/LhttxPp/good-Education.png" ,
+    
       
      
     },
     {
-        "type": 'Launch',
+        "type": 'New books for children',
         "id": 8,
-      "name": "Rice & curry",
-      "img" : "https://i.ibb.co/DG6fr7t/launch2.jpg",
-      "sheaf": "Maxime_Nienow",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 50,
+     
+      "img" :"https://i.ibb.co/Qn0pN2v/newBooks.png",
      
      
     },
     {
-        "type": 'Launch',
+        "type": 'Host a study group',
         "id": 9,
-      "name": "Rice & cock",
-      "img" : "https://i.ibb.co/CJKXfqD/launch3.jpg",
-      "sheaf": "Delphine",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 39,
       
+      "img" : "https://i.ibb.co/B2LhZsp/study-Group.png",
+    
    
     },
     {
-        "type": 'Launch',
+        "type": 'Build bird house for neighbor',
         "id": 10,
-      "name": "meat with varieties" ,
-      "img" :"https://i.ibb.co/X8t8y2s/launch4.jpg",
-      "sheaf": "Moriah.Stanton",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 49,
-      
+    
+      "img" :"https://i.ibb.co/vm0MDyZ/bird-House.png",
+   
     
     },
     {
-      "type": 'Launch',
+      "type": 'Organize books in library',
       "id": 11,
-      "name": "Deshy paultry",
-      "img" :"https://i.ibb.co/gjRrgLX/launch5.jpg",
-      "sheaf": "kumar",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 25,
+     
+      "img" :"https://i.ibb.co/bjtRMqW/library-Books.png",
+    
     
     
     },
     {
-        "type": 'Launch',
+        "type": 'Give a seminar on driving safety',
         "id": 12,
-      "name": "Frence Fried & meat",
-      "img" : "https://i.ibb.co/JtcR2dv/launch6.jpg",
-      "sheaf": "Bret",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 36,
+     
+      "img" : "https://i.ibb.co/dKGgLXh/drive-Safety.png",
+     
     
      
     },
     {
-        "type": 'Dinner',
+        "type": 'Give free music lessons',
         "id": 13,
-      "name": "Meat with cake",
-      "img" :"https://i.ibb.co/NpmpPY2/dinner.jpg",
-      "sheaf": "Bret",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      "price" : 25,
+    
+      "img" :"https://i.ibb.co/my7FJkp/music-Lessons.png",
+     
       
     
     },
     {
-        "type": 'Dinner',
+        "type": 'Teach people how to register a vote',
         "id": 14,
-      "name": "Goat meat",
-      "img" : "https://i.ibb.co/2YNV13V/dinner2.jpg",
-      "sheaf": "Bret",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
     
+      "img" : "https://i.ibb.co/44fVpNk/vote-Register.png",
+     
   
     },
     {
-        "type": 'Dinner',
+        "type": 'Clean up your local park',
         "id": 15,
-      "name": "Fork meat",
-      "img" :"https://i.ibb.co/qCqYdkg/dinner3.jpg",
-      "sheaf": "Bret",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 35,
+     
+      "img" :"https://i.ibb.co/JjDG2Bs/clearn-Park.png",
+     
       
     
     },
     {
-        "type": 'Dinner',
+        "type": 'Give IT help to local adults ',
         "id": 16,
-      "name": "Duck meat",
-      "img" :"https://i.ibb.co/k1V2zB5/dinner4.jpg",
-      "sheaf": "Bret",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 35,
+     
+      "img" :"https://i.ibb.co/TcNqMkF/ITHelp.png",
+    
      
     
     },
        {
-        "type": 'Dinner',
+        "type": 'Foster a shelter animal',
         "id": 17,
-      "name": "cock meat",
-      "img" : "https://i.ibb.co/fYps457/dinner5.jpg",
-      "sheaf": "Bret",
-      "detail":  "this is best tasty food around the world and it is also famous in my country",
-      "price" : 30,
-      
+  
+      "img" : "https://i.ibb.co/Xb9SZQd/animal-Shelter.png",
+    
      
     },
     {
-        "type": 'Dinner',
+        "type": 'Babysit during a PTA meetings',
         "id": 18,
-      "name": "Meat fried",
-      "img" : "https://i.ibb.co/R9mZ3kW/dinner6.jpg",
-      "sheaf": "Bret",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
       
+      "img" : "https://i.ibb.co/T8ngPj2/babySit.png",
+    
     
     },
     {
-        "type": 'Dinner',
+        "type": 'Collect stuffed animal',
         "id": 19,
-      "name": "Meat fried",
-      "img" : "https://i.ibb.co/R9mZ3kW/dinner6.jpg",
-      "sheaf": "Bret",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      
+     
+      "img" : "https://i.ibb.co/BcPv2Q7/stuffed-Animals.png",
+     
     
     },
    
     {
-        "type": 'Dinner',
+        "type": 'Collect school supply',
         "id": 20,
-      "name": "Meat fried",
-      "img" : "https://i.ibb.co/R9mZ3kW/dinner6.jpg",
-      "sheaf": "Bret",
-      "detail": "this is best tasty food around the world and it is also famous in my country",
-      
+    
+      "img" : "https://i.ibb.co/hyMXdqS/school-Suffiles.png",
+     
     
     }
   ]

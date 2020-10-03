@@ -10,7 +10,7 @@ const [data,setData] = useState(fakeData)
    <div className="row">
       
           {
-              data.map(data=><Volunteer data={data}></Volunteer>)
+              data.map(data=><Volunteer key={data.id} data={data}></Volunteer>)
           }
     
    </div>

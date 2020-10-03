@@ -1,0 +1,17 @@
+.logo{
+    width: 20px;height: 20px;
+}
+.login{
+    width: 300px;height: 300px;border: 1px solid gray;
+    text-align: center;
+}
+.login h2{
+    line-height: 120px;
+}
+.login-main{
+    text-align: center;
+}
+.login form button{
+    border-radius: 10px;
+    background-color: aqua;color: azure;
+}
