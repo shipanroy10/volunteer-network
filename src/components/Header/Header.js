@@ -16,18 +16,23 @@ const Header = () => {
      
     </Nav>
     
+    <Link to="/login">
+    
     <Nav className="mr-auto">
+    <Button variant="outline-success">Register</Button>
     <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#link">Donation</Nav.Link>
     <Nav.Link href="#link">Event</Nav.Link>
       <Nav.Link href="#link">Block</Nav.Link>
-      <Button variant="outline-success">Register</Button>
+     
     </Nav>
+    
+    </Link>
     <Form inline>
     
      
      
-     <Link to="/login"> <Button variant="dark">Admin</Button></Link>
+     <Link to="/update"> <Button variant="dark">Admin</Button></Link>
     </Form>
   </Navbar.Collapse>
 </Navbar>

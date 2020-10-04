@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
-import fakeData from '../Fakedata/Fakedata';
+import React, { useEffect, useState } from 'react';
+
 import Volunteer from '../Volunteer/Volunteer';
 import './Home.css';
 
 const Home = () => {
-const [data,setData] = useState(fakeData)
+const [datas,setData] = useState([]);
+console.log(datas)
+useEffect(()=>{
+    fetch('http://localhost:5000/works')
+    .then(res=>res.json())
+    .then(data=>setData(data))
+},[datas])
     return (
         <div className="container">
    <div className="row">
       
           {
-              data.map(data=><Volunteer key={data.id} data={data}></Volunteer>)
+              datas.map(data=><Volunteer key={data.id} data={data}></Volunteer>)
           }
     
    </div>

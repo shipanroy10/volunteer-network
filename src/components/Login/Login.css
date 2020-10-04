@@ -2,16 +2,17 @@
     width: 20px;height: 20px;
 }
 .login{
-    width: 300px;height: 300px;border: 1px solid gray;
+    width: 400px;height: 400px;border: 1px solid gray;
     text-align: center;
 }
 .login h2{
-    line-height: 120px;
+    line-height: 180px;
 }
-.login-main{
-    text-align: center;
+.col main {
+    background-position: center;
 }
-.login form button{
+.login  button{
     border-radius: 10px;
     background-color: aqua;color: azure;
+    border:none
 }

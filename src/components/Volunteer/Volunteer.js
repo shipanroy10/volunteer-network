@@ -6,22 +6,17 @@ import './Volunteer.css'
 const Volunteer = (props) => {
     const data = props.data;
     const {type,img} = data;
-console.log(type)
+
     return (
     
-  <div className="col-md-3">
+  <div className="col-md-3"  >
+
+   <img style={{ maxWidth: '100%',
+        maxHeight: '100%',
+        display: 'block'}} src={img} alt=""/>
+    <Link to={`/information/${type}`}><h5>{data.type}</h5></Link>
 
    
-
-   <Card >
-  <Card.Img  src={img} />
-  <Card.Body>
-
- <Link to={`/information/${type}`}><h5>{data.type}</h5></Link>
-      
-  
-  </Card.Body>
-</Card>
 
 
   </div>

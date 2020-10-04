@@ -1,11 +1,11 @@
-.form{
+.form-style{
     width: 500px;height:500px;text-align: center;
     border: 1px solid gray;margin-left: -15px;
     
 }
-.form input{
-    
+.form-style input{
     width: 90%;margin-top: 10px;
     margin-bottom: 10px;
-
 }
+
+

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 import './App.css';
@@ -13,14 +13,22 @@ import {
 } from "react-router-dom";
 import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
+import AboutTask from './components/AboutTask/AboutTask';
+import Inventory from './components/Inventory/Inventory';
+export const UserContext = createContext()
 function App() {
+  const [loggedInUser,setLoggedInUser] = useState({})
   return (
-    <div className="App">
-
+   <div>
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
+      
+    
 
       <Router>
       <Header></Header>
+     
         <Switch>
           <Route path="/home">
             <Home></Home>
@@ -28,8 +36,14 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/information/:type">
+          <PrivateRoute path="/information/:type">
             <Information></Information>
+          </PrivateRoute>
+         <PrivateRoute path="/update">
+        <Inventory></Inventory>
+         </PrivateRoute>
+          <Route path="/aboutTask">
+            <AboutTask></AboutTask>
           </Route>
           <Route path="/">
             <Home></Home>
@@ -40,9 +54,9 @@ function App() {
         </Switch>
       </Router>
    
+     </UserContext.Provider>
    
-   
-    </div>
+     </div>
   );
 }
 
