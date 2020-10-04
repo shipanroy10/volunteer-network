@@ -29,9 +29,7 @@ const Header = () => {
     
     </Link>
     <Form inline>
-    
-     
-     
+ 
      <Link to="/update"> <Button variant="dark">Admin</Button></Link>
     </Form>
   </Navbar.Collapse>

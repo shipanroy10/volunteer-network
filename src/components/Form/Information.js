@@ -15,6 +15,8 @@ import {
 } from '@material-ui/pickers';
 import fakeData from '../Fakedata/Fakedata';
 import Inventory from '../AboutTask/AboutTask';
+
+
 const Information = () => {
     const {type} = useParams();
     const allType = fakeData.filter(tp=>tp.type===type);
@@ -35,7 +37,7 @@ const Information = () => {
     };
 
 
-
+// single user add option
 
 const addWork = ()=>{
    // const img = {...data[0].img}

@@ -5,7 +5,10 @@ import './Home.css';
 
 const Home = () => {
 const [datas,setData] = useState([]);
-console.log(datas)
+console.log(datas);
+
+// allWorks are here
+
 useEffect(()=>{
     fetch('http://localhost:5000/works')
     .then(res=>res.json())
