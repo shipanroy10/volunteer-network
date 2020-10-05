@@ -18,11 +18,13 @@ import Inventory from '../AboutTask/AboutTask';
 
 
 const Information = () => {
+
     const {type} = useParams();
     const allType = fakeData.filter(tp=>tp.type===type);
 
     const [data,seData]= useState(allType);
-    console.log(data[0].img)
+    console.log(data[0].img);
+
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
  
 
@@ -50,7 +52,7 @@ const addWork = ()=>{
    .then(data=>{
       console.log(data)
    })
-}
+};
 
  
     return (

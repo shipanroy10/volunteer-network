@@ -14,17 +14,20 @@ useEffect(()=>{
     .then(res=>res.json())
     .then(data=>setData(data))
 },[datas])
+
+
+
     return (
-        <div className="container">
-   <div className="row">
-      
-          {
-              datas.map(data=><Volunteer key={data.id} data={data}></Volunteer>)
-          }
-    
-   </div>
-          
-        </div>
+                <div className="container">
+                    <div className="row">
+            
+                {
+                    datas.map(data=><Volunteer key={data.id} data={data}></Volunteer>)
+                }
+            
+                </div>
+                
+                </div>
     );
 };
 

@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 import './Inventory.css';
+
+
 const Inventory = () => {
+
+
     const [info,setInfo]= useState()
     const [bookings,setBookings] = useState([]);
     console.log(bookings)
 
 // this is total tasks
+
 useEffect(()=>{
     fetch('http://localhost:5000/booking')
     .then(res=>res.json())
@@ -24,7 +29,10 @@ const handleChange = (e)=>{
     setInfo(name)
     console.log(name)
     }
+
+
 // this is add function
+
    const addWorks = ()=>{
 const addOne = {...info}
         fetch('http://localhost:5000/addWorks',{
@@ -35,7 +43,9 @@ const addOne = {...info}
    
    }
 
+
 // this is delete function
+
    const deleteWork = (id)=>{
     fetch(`http://localhost:5000/delete/${id}`,{
         method:'DELETE'
@@ -46,6 +56,7 @@ const addOne = {...info}
         }
     })
 }
+
 
     return (
         <div className="container">

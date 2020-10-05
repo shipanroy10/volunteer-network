@@ -8,6 +8,7 @@ import firebaseConfig from './firebaseConfig';
 import { UserContext } from '../../App';
 import Inventory from '../AboutTask/AboutTask';
 firebase.initializeApp(firebaseConfig);
+
 const Login = () => {
   
 
@@ -15,6 +16,9 @@ const [loggedInUser,setLoggedInUser] = useContext(UserContext);
 let history = useHistory();
 let location = useLocation();
 let { from } = location.state || { from: { pathname: "/" } };
+
+// sign in with google
+
     const handleGoogleSignIn = ()=>{
     const  provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -37,6 +41,8 @@ let { from } = location.state || { from: { pathname: "/" } };
             // ...
           });
     }
+
+    
     return (
         <div className="container">
            <div className="col">

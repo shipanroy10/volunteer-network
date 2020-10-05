@@ -22,39 +22,37 @@ function App() {
   const [loggedInUser,setLoggedInUser] = useState({})
   return (
    <div>
-    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-      
-    
+          <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
 
-      <Router>
-      <Header></Header>
-     
-        <Switch>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <PrivateRoute path="/information/:type">
-            <Information></Information>
-          </PrivateRoute>
-         <PrivateRoute path="/update">
-        <Inventory></Inventory>
-         </PrivateRoute>
-          <Route path="/aboutTask">
-            <AboutTask></AboutTask>
-          </Route>
-          <Route path="/">
-            <Home></Home>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </Router>
-   
-     </UserContext.Provider>
+          <Router>
+            <Header></Header>
+          
+              <Switch>
+                 <Route path="/home">
+                  <Home></Home>
+                 </Route>
+                 <Route path="/login">
+                  <Login></Login>
+                 </Route>
+                 <PrivateRoute path="/information/:type">
+                  <Information></Information>
+                  </PrivateRoute>
+                 <PrivateRoute path="/update">
+                 <Inventory></Inventory>
+                  </PrivateRoute>
+                 <Route path="/aboutTask">
+                  <AboutTask></AboutTask>
+                  </Route>
+                  <Route path="/">
+                  <Home></Home>
+                  </Route>
+                  <Route path="*">
+                  <NotFound></NotFound>
+                </Route>
+              </Switch>
+            </Router>
+        
+          </UserContext.Provider>
    
      </div>
   );
