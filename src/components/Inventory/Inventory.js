@@ -13,7 +13,7 @@ const Inventory = () => {
 // this is total tasks
 
 useEffect(()=>{
-    fetch('http://localhost:5000/booking')
+    fetch('https://aqueous-ravine-76666.herokuapp.com/booking')
     .then(res=>res.json())
     .then(data=>{
         setBookings(data)
@@ -35,7 +35,7 @@ const handleChange = (e)=>{
 
    const addWorks = ()=>{
 const addOne = {...info}
-        fetch('http://localhost:5000/addWorks',{
+        fetch('https://aqueous-ravine-76666.herokuapp.com/addWorks',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(addOne)
@@ -47,7 +47,7 @@ const addOne = {...info}
 // this is delete function
 
    const deleteWork = (id)=>{
-    fetch(`http://localhost:5000/delete/${id}`,{
+    fetch(`https://aqueous-ravine-76666.herokuapp.com/delete/${id}`,{
         method:'DELETE'
     }).then(res=>res.json())
     .then(data=>{

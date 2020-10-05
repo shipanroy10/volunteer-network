@@ -44,7 +44,7 @@ const Information = () => {
 const addWork = ()=>{
    // const img = {...data[0].img}
    const work = {...loggedInUser,...selectedDate,type:type}
-   fetch('http://localhost:5000/addBook',{
+   fetch('https://aqueous-ravine-76666.herokuapp.com/addBook',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(work)

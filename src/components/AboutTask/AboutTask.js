@@ -13,7 +13,7 @@ console.log(loggedInUser);
 // this is about user task
 
     useEffect(()=>{
-        fetch('http://localhost:5000/bookings?email='+loggedInUser.email)
+        fetch('https://aqueous-ravine-76666.herokuapp.com/bookings?email='+loggedInUser.email)
         .then(res=>res.json())
         .then(data=>{
             setBooking(data)
@@ -25,7 +25,7 @@ console.log(loggedInUser);
     // this is delete function
 
     const deleteWork = (id)=>{
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://aqueous-ravine-76666.herokuapp.com/delete/${id}`,{
             method:'DELETE'
         }).then(res=>res.json())
         .then(data=>{

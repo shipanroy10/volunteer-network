@@ -10,7 +10,7 @@ console.log(datas);
 // allWorks are here
 
 useEffect(()=>{
-    fetch('http://localhost:5000/works')
+    fetch('https://aqueous-ravine-76666.herokuapp.com/works')
     .then(res=>res.json())
     .then(data=>setData(data))
 },[datas])
